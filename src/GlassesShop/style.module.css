@@ -1,0 +1,74 @@
+*{
+    box-sizing: border-box;
+    padding:0px;
+    margin:0px;
+}
+header{
+    background-color: #89636324;
+    text-align: center;
+    padding:1.5rem 0px;
+    color:white;
+
+}
+
+.backgroundImage{
+    background-image: url(../../public/images/background.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#model-left{
+    position: relative;
+    /* background-image:url(../../public/images/model.jpg);
+    background-repeat: no-repeat; */
+
+}
+
+#virtual-glasses-image{
+    position:absolute;
+    z-index: 1;
+    top: 27%;
+    left: 26%;
+    width: 48%;
+    opacity:.9;
+}
+
+#virtual-glasses-detail{
+    position:absolute;
+    z-index: 1;
+    bottom: 0%;
+    left: 0%;
+    width: 100%;
+    padding-left:1rem;
+    overflow-y: scroll;
+    height:25%;
+}
+
+#virtual-glasses-detail::-webkit-scrollbar {
+    display: none;
+  }
+
+#glassesList {
+    background-color: white;
+}
+
+#glassesList img{
+    margin-left:1rem;
+    margin-bottom:1rem;
+    border: 1px solid black;
+}
+
+
+@media screen and (max-width:991px) {
+    #virtual-glasses-image{
+        left: 21%;
+        width: 40%;
+    }
+}
+
+@media screen and (max-width:767px) {
+    #virtual-glasses-image{
+        left: 26%;
+        width: 48%;
+    }
+}
